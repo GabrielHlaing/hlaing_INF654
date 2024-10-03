@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe & Meal Planner: Planner</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/materialize.min.css"/>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="blue">
+      <div class="nav-wrapper container">
+        <a href="#" class="large-text brand-logo center">Let's Cook</a>
+        <ul class="right hide-on-small-only">
+          <li><a href="/" class="waves-effect">Home</a></li>
+          <li><a href="/pages/recipes.html" class="waves-effect">Recipes</a></li>
+          <li><a href="/pages/planner.html" class="waves-effect">Planner</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Stacked navigation for medium and small screens -->
+    <div class="hide-on-med-and-up center">
+      <ul>
+        <li class="orange" style="margin: 10px;"><a href="/" class="white-text waves-effect">Home</a></li>
+        <li class="orange" style="margin: 10px;"><a href="/pages/recipes.html" class="white-text waves-effect">Recipes</a></li>
+        <li class="orange" style="margin: 10px;"><a href="/pages/planner.html" class="white-text waves-effect">Planner</a></li>
+      </ul>
+    </div>
+
+<!-- Content Section -->
+<div class="container">
+    <h2 class="center-align">Meal Planner</h2>
+    <p>Plan your meals for the week:</p>
+  
+    <!-- First row for Monday to Wednesday -->
+    <div class="row">
+      <div class="input-field col s12 m4">
+        <input type="text" id="meal-monday" placeholder="Monday's meal">
+        <label for="meal-monday">Monday</label>
+      </div>
+      <div class="input-field col s12 m4">
+        <input type="text" id="meal-tuesday" placeholder="Tuesday's meal">
+        <label for="meal-tuesday">Tuesday</label>
+      </div>
+      <div class="input-field col s12 m4">
+        <input type="text" id="meal-wednesday" placeholder="Wednesday's meal">
+        <label for="meal-wednesday">Wednesday</label>
+      </div>
+    </div>
+  
+    <!-- Second row for Thursday to Saturday -->
+    <div class="row">
+      <div class="input-field col s12 m4">
+        <input type="text" id="meal-thursday" placeholder="Thursday's meal">
+        <label for="meal-thursday">Thursday</label>
+      </div>
+      <div class="input-field col s12 m4">
+        <input type="text" id="meal-friday" placeholder="Friday's meal">
+        <label for="meal-friday">Friday</label>
+      </div>
+      <div class="input-field col s12 m4">
+        <input type="text" id="meal-saturday" placeholder="Saturday's meal">
+        <label for="meal-saturday">Saturday</label>
+      </div>
+    </div>
+  
+    <!-- Third row for Sunday -->
+    <div class="row">
+      <div class="input-field col s12 m4">
+        <input type="text" id="meal-sunday" placeholder="Sunday's meal">
+        <label for="meal-sunday">Sunday</label>
+      </div>
+    </div>
+  
+    <!-- Save button -->
+    <a class="waves-effect waves-light btn blue" style="margin-bottom: 30px;">Save Plan</a>
+  </div>
+  
+
+        <!-- Footer -->
+    <footer class="page-footer blue lighten-3">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Let's Cook</h5>
+            <p class="grey-text text-lighten-4">Helping you stay organized and creative in the kitchen!</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          © 2024 Let's Cook. All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+
+    <script src="/js/materialize.min.js"></script>
+  </body>
+</html>
