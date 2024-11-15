@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe & Meal Planner: Home</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/materialize.min.css" />
+    <link rel="manifest" href="/manifest.json">
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="blue">
+      <div class="nav-wrapper container">
+        <a href="#" class="large-text brand-logo center">Let's Cook</a>
+        <ul class="right hide-on-small-only">
+          <li><a href="/" class="waves-effect">Home</a></li>
+          <li><a href="/pages/recipes.html" class="waves-effect">Recipes</a></li>
+          <li><a href="/pages/planner.html" class="waves-effect">Planner</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Stacked navigation for medium and small screens -->
+    <div class="hide-on-med-and-up center">
+      <ul>
+        <li class="orange" style="margin: 10px;"><a href="/" class="white-text waves-effect">Home</a></li>
+        <li class="orange" style="margin: 10px;"><a href="/pages/recipes.html" class="white-text waves-effect">Recipes</a></li>
+        <li class="orange" style="margin: 10px;"><a href="/pages/planner.html" class="white-text waves-effect">Planner</a></li>
+      </ul>
+    </div>
+
+    <!-- Hero -->
+    <div class="orange lighten-3 center" style="padding: 100px;">
+      <h1><b>Welcome to Recipe & Meal Planner</b></h1>
+      <p style="font-size: large;">Your all-in-one solution for recipes, meal planning, and grocery lists</p>
+      <a href="#" class="waves-effect waves-light btn blue">Get Started</a>
+    </div>
+
+    <!-- Content Section: Recipes and Planner -->
+    <div class="container" style="padding: 50px;">
+      <div class="row">
+        <!-- Recipes Section -->
+        <div class="col s12 m6">
+          <div class="card hoverable">
+            <div class="card-image">
+              <img src="https://via.placeholder.com/600x400" alt="Recipes">
+              <span class="card-title">Recipes</span>
+            </div>
+            <div class="card-content">
+              <p>Discover thousands of delicious recipes. Save your favorites and access them offline!</p>
+            </div>
+            <div class="card-action">
+              <a href="/pages/recipes.html" class="waves-effect blue-text">Explore Recipes</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Planner Section -->
+        <div class="col s12 m6">
+          <div class="card hoverable">
+            <div class="card-image">
+              <img src="https://via.placeholder.com/600x400" alt="Meal Planner">
+              <span class="card-title">Meal Planner</span>
+            </div>
+            <div class="card-content">
+              <p>Plan your weekly meals with ease and generate grocery lists instantly.</p>
+            </div>
+            <div class="card-action">
+              <a href="/pages/planner.html" class="waves-effect blue-text">Start Planning</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+        <!-- Footer -->
+    <footer class="page-footer blue lighten-3">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Let's Cook</h5>
+            <p class="grey-text text-lighten-4">Helping you stay organized and creative in the kitchen!</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          © 2024 Let's Cook. All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+
+    <script src="/js/materialize.min.js"></script>
+    <script src="/js/ui.js"></script>
+    <script type="module" src="/js/firebaseDB.js"></script>
+  </body>
+</html>
