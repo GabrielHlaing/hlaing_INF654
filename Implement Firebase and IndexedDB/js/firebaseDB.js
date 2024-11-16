@@ -1,6 +1,6 @@
 // Import necessary Firebase functions
 import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js";
-import { getFirestore, doc, setDoc, getDoc } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-firestore.js";
+import { getFirestore, doc, getDoc, setDoc } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-firestore.js";
 
 // Firebase configuration object
 const firebaseConfig = {
@@ -25,6 +25,22 @@ export const saveMealPlanToFirebase = async (mealPlan) => {
     console.log("Meal Plan saved to Firebase!");
   } catch (e) {
     console.error("Error saving meal plan to Firebase: ", e);
+  }
+};
+
+// Get Meal Plan from Firebase (online)
+export const getMealPlanFromFirebase = async () => {
+  try {
+    const mealPlanRef = doc(db, "mealPlans", "currentPlan");
+    const docSnap = await getDoc(mealPlanRef);
+    if (docSnap.exists()) {
+      return docSnap.data();  // Returns the meal plan data
+    } else {
+      console.log("No meal plan found in Firebase.");
+      return null;
+    }
+  } catch (e) {
+    console.error("Error getting meal plan from Firebase: ", e);
   }
 };
 

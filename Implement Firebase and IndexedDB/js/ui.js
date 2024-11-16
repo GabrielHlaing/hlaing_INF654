@@ -1,4 +1,4 @@
-import { saveMealPlanToIndexedDB, getMealPlanFromIndexedDB, saveMealPlanToFirebase } from './firebaseDB.js';
+import { saveMealPlanToIndexedDB, getMealPlanFromIndexedDB, saveMealPlanToFirebase, getMealPlanFromFirebase } from './firebaseDB.js';
 
 // Register service worker
 if ("serviceWorker" in navigator) {
@@ -57,7 +57,7 @@ const loadMealPlan = async () => {
 
   if (navigator.onLine) {
     // If online, load from Firebase
-    mealPlan = await getMealPlanFromIndexedDB();
+    mealPlan = await getMealPlanFromFirebase();
   } else {
     // If offline, load from IndexedDB
     mealPlan = await getMealPlanFromIndexedDB();
@@ -66,16 +66,17 @@ const loadMealPlan = async () => {
   const mealPlannerMsg = document.getElementById("meal-planner-msg");
   
   if (mealPlan) {
-    // Filter out the 'id' key when creating the list
     const mealEntries = Object.entries(mealPlan).filter(([key, value]) => key !== "id");
     const mealPlanHTML = mealEntries
-      .map(([day, meal]) => `<p>${day.charAt(0).toUpperCase() + day.slice(1)}: ${meal}</p>`)
+      .map(([day, meal]) => `<p>${day.charAt(0).toUpperCase() + day.slice(1)}: 
+       <span class="green-text">${meal}</span></p>`)
       .join('');
-    
+
     mealPlannerMsg.innerHTML = mealPlanHTML || "<p>No meal plan available.</p>";
   } else {
     mealPlannerMsg.innerHTML = "<p>No meal plan available.</p>";
   }
+
 };
 
 // Function to check storage usage
