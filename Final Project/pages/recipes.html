@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe & Meal Planner: Recipes</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/materialize.min.css"/>
+  </head>
+
+  <style>
+    .custom-border {
+      border: 2px solid #1976D2; 
+      padding: 10px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+  </style>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="blue">
+      <div class="nav-wrapper container">
+        <a href="#" class="large-text brand-logo left">Let's Cook</a>
+        <ul class="right hide-on-small-only">
+          <li><a href="/" class="waves-effect">Home</a></li>
+          <li><a href="/pages/recipes.html" class="waves-effect">Recipes</a></li>
+          <li><a href="/pages/planner.html" class="waves-effect">Planner</a></li>
+          <li><a href="/pages/auth.html" id="logout-btn" class="waves-effect" style="display: block">Logout</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Stacked navigation for medium and small screens -->
+    <div class="hide-on-med-and-up center">
+      <ul>
+        <li class="orange" style="margin: 10px;"><a href="/" class="white-text waves-effect">Home</a></li>
+        <li class="orange" style="margin: 10px;"><a href="/pages/recipes.html" class="white-text waves-effect">Recipes</a></li>
+        <li class="orange" style="margin: 10px;"><a href="/pages/planner.html" class="white-text waves-effect">Planner</a></li>
+        <li class="orange" style="margin: 10px;"><a href="/pages/auth.html" id="logout-btn" class="white-text waves-effect" style="display: block">Logout</a></li>
+      </ul>
+    </div>
+
+  <!-- Content Section -->
+  <div class="container">
+    <h2 class="center-align">Recipes</h2>
+    <div class="row">
+      <div class="col s12 m6 l3">
+        <div class="card hoverable">
+          <div class="card-image">
+            <img src="/images/icons/spaghetti.png" alt="Spaghetti Carbonara">
+          </div>
+          <div class="card-content">
+            <span class="card-title"><a href="#recipe1">Spaghetti Carbonara</a></span>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6 l3">
+        <div class="card hoverable">
+          <div class="card-image">
+            <img src="/images/icons/chicken-salad.png" alt="Chicken Caesar Salad">
+          </div>
+          <div class="card-content">
+            <span class="card-title"><a href="#recipe2">Chicken Caesar Salad</a></span>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6 l3">
+        <div class="card hoverable">
+          <div class="card-image">
+            <img src="/images/icons/pizza.png" alt="Margherita Pizza">
+          </div>
+          <div class="card-content">
+            <span class="card-title"><a href="#recipe3">Margherita Pizza</a></span>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6 l3">
+        <div class="card hoverable">
+          <div class="card-image">
+            <img src="/images/icons/tacos.png" alt="Beef Tacos">
+          </div>
+          <div class="card-content">
+            <span class="card-title"><a href="#recipe4">Beef Tacos</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s12 m6 l3">
+        <div class="card hoverable">
+          <div class="card-image">
+            <img src="/images/icons/sandwich.png" alt="Grilled Cheese Sandwich">
+          </div>
+          <div class="card-content">
+            <span class="card-title"><a href="#recipe5">Grilled Cheese Sandwich</a></span>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6 l3">
+        <div class="card hoverable">
+          <div class="card-image">
+            <img src="/images/icons/vege.png" alt="Vegetable Stir Fry">
+          </div>
+          <div class="card-content">
+            <span class="card-title"><a href="#recipe6">Vegetable Stir Fry</a></span>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6 l3">
+        <div class="card hoverable">
+          <div class="card-image">
+            <img src="/images/icons/salmon.png" alt="Baked Salmon">
+          </div>
+          <div class="card-content">
+            <span class="card-title"><a href="#recipe7">Baked Salmon</a></span>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6 l3">
+        <div class="card hoverable">
+          <div class="card-image">
+            <img src="/images/icons/pancake.png" alt="Pancakes">
+          </div>
+          <div class="card-content">
+            <span class="card-title"><a href="#recipe8">Pancakes</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="custom-border container" id="recipe1">
+    <h4>Spaghetti Carbonara</h4>
+    <h5>Ingredients:</h5>
+    <p>200g spaghetti, 100g pancetta, 2 large eggs, 50g Pecorino cheese, 50g Parmesan cheese, Freshly ground black pepper, Salt</p>
+    <h5>Steps:</h5>
+    <p>
+      <ol>
+        <li>Cook spaghetti in a large pot of salted boiling water until al dente (about 8 minutes).</li>
+        <li>While pasta is cooking, heat pancetta in a pan over medium heat until crispy.</li>
+        <li>Whisk eggs and both cheeses in a bowl, then season with black pepper.</li>
+        <li>Drain the pasta, reserving some pasta water.</li>
+        <li>Toss pasta in the pan with pancetta, then quickly combine with the egg mixture.</li>
+        <li>Add pasta water to create a creamy sauce. Serve immediately.</li>
+      </ol>
+    </p>
+  </div>
+  <div class="custom-border container" id="recipe2">
+    <h4>Chicken Caesar Salad</h4>
+    <h5>Ingredients:</h5>
+    <p>2 chicken breasts, 1 romaine lettuce, 50g Parmesan cheese, 2 slices of whole grain bread, Caesar dressing</p>
+    <h5>Steps:</h5>
+    <p>
+      <ol>
+        <li>Grill the chicken breasts until fully cooked, then slice.</li>
+        <li>Toss chopped romaine lettuce with Caesar dressing.</li>
+        <li>Add sliced chicken, crumbled toast, and Parmesan cheese.</li>
+        <li>Serve chilled, with additional dressing if desired.</li>
+      </ol>
+    </p>
+  </div>
+  <div class="custom-border container" id="recipe3">
+    <h4>Margherita Pizza</h4>
+    <h5>Ingredients:</h5>
+    <p>1 pizza dough, 
+      200g mozzarella cheese, 
+      2 ripe tomatoes, 
+      Fresh basil leaves, 
+      Olive oil, 
+      Salt</p>
+    <h5>Steps</h5>
+    <p>
+      <ol>
+        <li>Preheat your oven to 250°C (475°F).</li>
+        <li>Roll out the pizza dough onto a baking sheet.</li>
+        <li>Layer mozzarella cheese, tomato slices, and basil leaves on the dough.</li>
+        <li>Drizzle with olive oil and sprinkle with salt.</li>
+        <li>Bake for 10-12 minutes, until the crust is golden and cheese is bubbling.</li>
+      </ol>
+    </p>
+  </div>
+  <div class="custom-border container" id="recipe4">
+    <h4>Beef Tacos</h4>
+    <h5>Ingredients:</h5>
+    <p>500g ground beef
+      12 taco shells, 
+      1 onion, diced, 
+      1 packet taco seasoning, 
+      100g shredded cheddar cheese, 
+      (Salsa, guacamole, and sour cream) for topping</p>
+    <h5>Steps:</h5>
+    <p>
+      <ol>
+        <li>Brown ground beef with diced onion in a skillet over medium heat.</li>
+        <li>Add taco seasoning and cook according to package instructions.</li>
+        <li>Warm taco shells in the oven.</li>
+        <li>Fill each taco shell with seasoned beef, then top with cheese, salsa, guacamole, and sour cream.</li>
+      </ol>
+    </p>
+  </div>
+  <div class="custom-border container" id="recipe5">
+    <h4>Grilled Cheese Sandwich</h4>
+    <h5>Ingredients:</h5>
+    <p>4 slices of bread, 
+      2 tablespoons butter, 
+      4 slices of cheddar cheese</p>
+    <h5>Steps:</h5>
+    <p>
+      <ol>
+        <li>Heat a pan over medium heat.</li>
+        <li>Butter one side of each slice of bread.</li>
+        <li>Place a slice of cheese between two slices of bread, buttered side out.</li>
+        <li>Grill the sandwich in the pan until golden brown on both sides and the cheese is melted.</li>
+      </ol>
+    </p>
+  </div>
+  <div class="custom-border container" id="recipe6">
+    <h4>Vegetable Stir Fry</h4>
+    <h5>Ingredients:</h5>
+    <p>1 cup broccoli florets, 
+      1 red bell pepper, 
+      1 carrot, 
+      2 tablespoons soy sauce, 
+      1 tablespoon olive oil, 
+      1 clove garlic, 
+      Cooked rice for serving</p>
+    <h5>Steps:</h5>
+    <p>
+      <ol>
+        <li>Heat olive oil in a wok or large pan.</li>
+        <li>Add garlic and cook for 1 minute.</li>
+        <li>Add vegetables and stir-fry for 5-7 minutes, until tender.</li>
+        <li>Stir in soy sauce and cook for another 2 minutes.</li>
+        <li>Serve over cooked rice.</li>
+      </ol>
+    </p>
+  </div>
+  <div class="custom-border container" id="recipe7">
+    <h4>Baked Salmon</h4>
+    <h5>Ingredients:</h5>
+    <p>4 salmon fillets, 
+      1 lemon, 
+      Fresh herbs, 
+      Olive oil, 
+      Salt and pepper</p>
+    <h5>Steps:</h5>
+    <p>
+      <ol>
+        <li>Preheat the oven to 200°C (400°F).</li>
+        <li>Place salmon fillets on a baking tray.</li>
+        <li>Drizzle with olive oil, then season with salt, pepper, and fresh herbs.</li>
+        <li>Top each fillet with a slice of lemon.</li>
+        <li>Bake for 12-15 minutes, until salmon is cooked through.</li>
+      </ol>
+    </p>
+  </div>
+  <div class="custom-border container" id="recipe8">
+    <h4>Pancakes</h4>
+    <h5>Ingredients:</h5>
+    <p>1 cup all-purpose flour, 
+      2 tablespoons sugar, 
+      2 teaspoons baking powder, 
+      1/2 teaspoon salt, 
+      1 cup milk, 
+      1 egg, 
+      2 tablespoons butter</p>
+    <h5>Steps:</h5>
+    <p>
+      <ol>
+        <li>In a bowl, whisk together dry ingredients.</li>
+        <li>In another bowl, mix together milk, egg, and melted butter.</li>
+        <li>Pour wet ingredients into dry ingredients and stir until smooth.</li>
+        <li>Heat a pan over medium heat and pour batter in 1/4 cup portions.</li>
+        <li>Cook each pancake for 2-3 minutes per side, until golden brown.</li>
+      </ol>
+    </p>
+  </div>
+
+
+        <!-- Footer -->
+    <footer class="page-footer blue lighten-3">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Let's Cook</h5>
+            <p class="grey-text text-lighten-4">Helping you stay organized and creative in the kitchen!</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          © 2024 Let's Cook. All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+
+    <script src="/js/materialize.min.js"></script>
+    <script type="module" src="/js/ui.js"></script>
+</html>

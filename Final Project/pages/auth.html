@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In</title>
+    <link rel="stylesheet" href="/css/materialize.min.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="blue lighten-3">
+    <div class="container" style="padding: 20px;">
+
+<!-- Logo with Title -->
+ <div class="container">
+  <div class="row valign-wrapper">
+    <div class="col s8">
+      <h3 class="white-text right-align">Recipe & Meal Planner</h3>
+    </div>
+    <div class="col s4">
+      <img src="/images/icons/icon-192x192.png" alt="Recipe & Meal Planner Logo" 
+      class="responsive-img" style="max-width: 80px; border-radius: 50px;">
+    </div>
+  </div>
+</div>
+
+
+      <!-- Sign In Form -->
+      <div id="sign-in-form" class="container row white" style="padding: 20px;">
+        <h4 class="center-align blue-text text-darken-2">Log In</h4>
+        <div class="input-field col s12">
+          <input type="email" id="sign-in-email" class="validate" required/>
+          <label for="sign-in-email">Email</label>
+        </div>
+        <div class="input-field col s12">
+          <input type="password" id="sign-in-password" class="validate" required/>
+          <label for="sign-in-password">Password</label>
+        </div>
+        <div class="col s12" style="padding: 10px;">
+          <button id="sign-in-btn" 
+          class="btn blue darken-2 waves-effect waves-light col s12">
+            Log In
+          </button>
+        </div>
+        <div class="col s12 center-align">
+          <p>
+            Don't have an account?
+            <a href="#" id="show-signup" class="blue-text">Register Now</a>
+          </p>
+        </div>
+      </div>
+
+      <!-- Sign Up Form -->
+      <div id="sign-up-form" class="container row white" style="display: none; padding: 20px;">
+        <h4 class="center-align blue-text text-darken-2">Sign Up</h4>
+        <div class="input-field col s12">
+          <input type="email" id="sign-up-email" class="validate" required />
+          <label for="sign-up-email">Email</label>
+        </div>
+        <div class="input-field col s12">
+          <input type="text" id="sign-up-name" class="validate" required />
+          <label for="sign-up-name">Name</label>
+        </div>
+        <div class="input-field col s12">
+          <input type="password" id="sign-up-password" class="validate" required/>
+          <label for="sign-up-password">Password</label>
+        </div>
+        <div class="col s12" style="padding: 10px;">
+          <button id="sign-up-btn" class="btn blue darken-2 waves-effect waves-light col s12">
+            Register
+          </button>
+        </div>
+        <div class="col s12 center-align">
+          <p>
+            Already have an account?
+            <a href="#" id="show-signin" class="blue-text">Log In</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="/js/materialize.min.js"></script>
+    <script type="module" src="/js/signIn.js"></script>
+  </body>
+</html>
